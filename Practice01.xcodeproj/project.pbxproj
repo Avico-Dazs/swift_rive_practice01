@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E31705B295E831E001633D6 /* bomb_switch.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6E31705A295E831E001633D6 /* bomb_switch.riv */; };
+		6E31705D295FCCA3001633D6 /* Bomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E31705C295FCCA3001633D6 /* Bomb.swift */; };
+		6E317061295FD276001633D6 /* BombView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E317060295FD276001633D6 /* BombView.swift */; };
+		6E31706729650AF4001633D6 /* BombViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E31706629650AF4001633D6 /* BombViewModel.swift */; };
+		6E317069296520CC001633D6 /* explosion.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6E317068296520CC001633D6 /* explosion.riv */; };
+		6E85AAC2295DBAF900E82503 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 6E85AAC1295DBAF900E82503 /* RiveRuntime */; };
 		6EA0F92E2953454F00552ECD /* Practice01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA0F92D2953454F00552ECD /* Practice01App.swift */; };
 		6EA0F9302953454F00552ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA0F92F2953454F00552ECD /* ContentView.swift */; };
 		6EA0F9322953454F00552ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA0F9312953454F00552ECD /* Assets.xcassets */; };
 		6EA0F9362953454F00552ECD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA0F9352953454F00552ECD /* Preview Assets.xcassets */; };
+		6EA0F93F2955148800552ECD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA0F93E2955148800552ECD /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E31705A295E831E001633D6 /* bomb_switch.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bomb_switch.riv; sourceTree = "<group>"; };
+		6E31705C295FCCA3001633D6 /* Bomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bomb.swift; sourceTree = "<group>"; };
+		6E317060295FD276001633D6 /* BombView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BombView.swift; sourceTree = "<group>"; };
+		6E31706629650AF4001633D6 /* BombViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BombViewModel.swift; sourceTree = "<group>"; };
+		6E317068296520CC001633D6 /* explosion.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.riv; sourceTree = "<group>"; };
 		6EA0F92A2953454F00552ECD /* Practice01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA0F92D2953454F00552ECD /* Practice01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice01App.swift; sourceTree = "<group>"; };
 		6EA0F92F2953454F00552ECD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EA0F9312953454F00552ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EA0F9332953454F00552ECD /* Practice01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Practice01.entitlements; sourceTree = "<group>"; };
 		6EA0F9352953454F00552ECD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EA0F93E2955148800552ECD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E85AAC2295DBAF900E82503 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E317053295E6F78001633D6 /* Rive Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E317068296520CC001633D6 /* explosion.riv */,
+				6E31705A295E831E001633D6 /* bomb_switch.riv */,
+			);
+			path = "Rive Files";
+			sourceTree = "<group>";
+		};
+		6E31705F295FD25E001633D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E317060295FD276001633D6 /* BombView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6EA0F9212953454F00552ECD = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +83,10 @@
 		6EA0F92C2953454F00552ECD /* Practice01 */ = {
 			isa = PBXGroup;
 			children = (
+				6E31705F295FD25E001633D6 /* View */,
+				6E317053295E6F78001633D6 /* Rive Files */,
+				6EA0F93D2955145900552ECD /* ViewModel */,
+				6EA0F93C2955142400552ECD /* Model */,
 				6EA0F92D2953454F00552ECD /* Practice01App.swift */,
 				6EA0F92F2953454F00552ECD /* ContentView.swift */,
 				6EA0F9312953454F00552ECD /* Assets.xcassets */,
@@ -67,6 +102,23 @@
 				6EA0F9352953454F00552ECD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EA0F93C2955142400552ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E31705C295FCCA3001633D6 /* Bomb.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EA0F93D2955145900552ECD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6EA0F93E2955148800552ECD /* MainViewModel.swift */,
+				6E31706629650AF4001633D6 /* BombViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +137,9 @@
 			dependencies = (
 			);
 			name = Practice01;
+			packageProductDependencies = (
+				6E85AAC1295DBAF900E82503 /* RiveRuntime */,
+			);
 			productName = Practice01;
 			productReference = 6EA0F92A2953454F00552ECD /* Practice01.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 6EA0F9212953454F00552ECD;
+			packageReferences = (
+				6E85AAC0295DBAF900E82503 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 6EA0F92B2953454F00552ECD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E31705B295E831E001633D6 /* bomb_switch.riv in Resources */,
+				6E317069296520CC001633D6 /* explosion.riv in Resources */,
 				6EA0F9362953454F00552ECD /* Preview Assets.xcassets in Resources */,
 				6EA0F9322953454F00552ECD /* Assets.xcassets in Resources */,
 			);
@@ -140,7 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EA0F9302953454F00552ECD /* ContentView.swift in Sources */,
+				6E317061295FD276001633D6 /* BombView.swift in Sources */,
+				6E31706729650AF4001633D6 /* BombViewModel.swift in Sources */,
+				6E31705D295FCCA3001633D6 /* Bomb.swift in Sources */,
 				6EA0F92E2953454F00552ECD /* Practice01App.swift in Sources */,
+				6EA0F93F2955148800552ECD /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E85AAC0295DBAF900E82503 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E85AAC1295DBAF900E82503 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E85AAC0295DBAF900E82503 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EA0F9222953454F00552ECD /* Project object */;
 }
